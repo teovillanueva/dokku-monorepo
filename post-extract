@@ -16,6 +16,7 @@ while IFS="=" read -u 10 -a line || [[ -n $line ]]; do
   dokku_log_info2 "Installing from ./$app_subdir"
 
   pwd
+  ls
 
   # Move the app we want to deploy to a temp directory.
   app_tmp_dir="$(mktemp -d)"
